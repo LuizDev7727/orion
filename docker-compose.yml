@@ -1,0 +1,16 @@
+services:
+  pg-docker:
+    container_name: orion-pg
+    image: bitnami/postgresql
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=orion
+      - POSTGRES_PASSWORD=orion
+      - POSTGRES_DB=orion
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge

@@ -47,5 +47,9 @@ pnpm db:seed
 OPENAI_API_KEY=
 DATABASE_URL='postgresql://user:password@localhost:5432/database'
 
+// Gerar o Prisma Client
+
+pnpm prisma generate
+
 // Rodar o Projeto
 pnpm dev
